@@ -1,12 +1,13 @@
 import Link from "next/link";
 
-const Bolo = () => {
+const Bolo = ({data}) => {
   return (
     <article>
-      <Link href="/">
-        <a>
-          Iremos renderizar o título e a descrição do bolo aqui
-        </a>
+      <Link href={`/${data.id}`}>
+        <div>
+        <a>{data.title}</a>
+        <p>{data.description}</p>
+        </div> 
       </Link>
     </article>
   );

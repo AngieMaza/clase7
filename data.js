@@ -1,4 +1,4 @@
-export const receitas = [
+export const data = [
   {
     title: "Bolo simples e fofo",
     image:
