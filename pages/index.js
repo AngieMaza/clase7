@@ -10,7 +10,6 @@ const Home = () => {
   if (error) return <div>failed to load</div>
   if (isLoading) return <div>loading...</div>
 
-  console.log(data);
   return (
     <>
     {data?.map(d => <Bolo key={d.id} data={d}/> )}
